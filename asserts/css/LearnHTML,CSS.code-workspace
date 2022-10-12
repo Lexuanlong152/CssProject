@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../../LearnHTML,CSS"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"bitset": "c",
+			"chrono": "c",
+			"algorithm": "c",
+			"*.inc": "c"
+		},
+		"liveServer.settings.multiRootWorkspaceName": "Project"
+	}
+}
