@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./asserts/css/gird.css">
     <link rel="stylesheet" href="./asserts/css/base.css">
     <link rel="stylesheet" href="./asserts/css/main.css">
     <link rel="stylesheet" href="./asserts/fonts/fontawesome-free-6.2.0-web/css/all.min.css">
@@ -21,7 +22,7 @@
     <div class="app">
         <header class="header">
             <div class="gird">
-                <nav class="header__navbar">
+                <nav class="header__navbar-pc">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item-has-qr header__navbar-item--separate">
                             Vào cửa hàng trên ứng dụng TickID
@@ -137,6 +138,24 @@
                         </li>
                     </ul>
                 </nav>
+
+                <div class="header__navbar-mobile">
+                    <label for="nav-mobile-input" class="nav__bars-btn">
+                        <i class="nav__bars-icon fa-solid fa-bars"></i>
+                    </label>
+                    <ul class="header__navbar-mobile-list">
+                        <li class="header__navbar-mobile-item">
+                            Vào cửa hàng trên ứng dụng TickID
+                        </li>
+                        <li class="header__navbar-mobile-item">
+                            Kết nối
+                        </li>
+                        <li class="header__navbar-mobile-item">Thông báo</li>
+                        <li class="header__navbar-mobile-item">Trợ giúp</li>
+                        <li class="header__navbar-mobile-item">Đăng nhặp</li>
+                        <li class="header__navbar-mobile-item">Đăng xuất</li>
+                    </ul>
+                </div>
 
                 <div class="header-with-search">
                     <div class="header__logo">
@@ -274,9 +293,9 @@
 
         </header>
         <div class="app__container">
-            <div class="gird">
-                <div class="gird__row app__content">
-                    <div class="col-2">
+            <div class="gird ">
+                <div class="row app__content">
+                    <div class="col l-2 m-0 c-0">
                         <nav class="category">
 
                             <h3 class="category__heading">
@@ -300,7 +319,7 @@
                         </nav>
                     </div>
 
-                    <div class="col-10">
+                    <div class="col l-10 m-12 c-12">
                         <div class="home-filter">
                             <span class="home-filter__label">
                                 Sắp xếp theo
@@ -341,446 +360,241 @@
                         </div>
 
                         <div class="home-product">
-                            <div class="gird__row">
-                                <div class="col-2-4">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item__img"
-                                            style="background-image:url(https://nhatminhdecor.com/wp-content/uploads/2019/01/chup-anh-voi-phong-nen-vai-trang-1.jpg) ;">
-                                        </div>
-                                        <h4 class="home-product-item__name">Sét quần áo Sét quần áo Sét quần áo Sét quần
-                                            áo Sét quần áo</h4>
-                                        <div class="home-product-item__price">
-                                            <div class="home-product-item__price-old">1.200.000đ</div>
-                                            <div class="home-product-item__price-current">1.000.000đ</div>
-                                        </div>
-                                        <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
-                                                <i class="home-product-item__like-empty fa-regular fa-heart"></i>
-                                                <i class="home-product-item__like-fill fa-solid fa-heart"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
+                            <div class="children-row ">
+                                <div class="children-col l-2-4 m-4 c-6">
+                                    <div class="row">
+                                        <a href="#" class="home-product-item">
+                                            <div class="home-product-item__img"
+                                                style="background-image:url(https://nhatminhdecor.com/wp-content/uploads/2019/01/chup-anh-voi-phong-nen-vai-trang-1.jpg) ;">
                                             </div>
-                                            <span class="home-product-item__sold">Đã bán 88</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Whoo</span>
-                                            <span class="home-product-item__origin-name">Nhật Bản</span>
-                                        </div>
-                                        <div class="home-product-item__favorite">
-                                            <i class="home-product-item__favorite-icon fa-solid fa-check"></i>
-                                            <span>Yêu thích</span>
-                                        </div>
+                                            <h4 class="home-product-item__name">Sét quần áo Sét quần áo Sét quần áo Sét
+                                                quần
+                                                áo Sét quần áo</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">1.200.000đ</div>
+                                                <div class="home-product-item__price-current">1.000.000đ</div>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-empty fa-regular fa-heart"></i>
+                                                    <i class="home-product-item__like-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star-yellow fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star-yellow fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star-yellow fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star-yellow fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đã bán 88</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Whoo</span>
+                                                <span class="home-product-item__origin-name">Nhật Bản</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="home-product-item__favorite-icon fa-solid fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
 
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__sale-off-percent">
-                                                43%
-                                            </span>
-                                            <span class="home-product-item__sale-off-label">
-                                                GIẢM
-                                            </span>
-                                        </div>
-                                    </a>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">
+                                                    43%
+                                                </span>
+                                                <span class="home-product-item__sale-off-label">
+                                                    GIẢM
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="col-2-4">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item__img"
-                                            style="background-image:url(https://nhatminhdecor.com/wp-content/uploads/2019/01/chup-anh-voi-phong-nen-vai-trang-1.jpg) ;">
-                                        </div>
-                                        <h4 class="home-product-item__name">Sét quần áo Sét quần áo Sét quần áo Sét quần
-                                            áo Sét quần áo</h4>
-                                        <div class="home-product-item__price">
-                                            <div class="home-product-item__price-old">1.200.000đ</div>
-                                            <div class="home-product-item__price-current">1.000.000đ</div>
-                                        </div>
-                                        <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
-                                                <i class="home-product-item__like-empty fa-regular fa-heart"></i>
-                                                <i class="home-product-item__like-fill fa-solid fa-heart"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
+                                <div class="children-col l-2-4 m-4 c-6">
+                                    <div class="row">
+                                        <a href="#" class="home-product-item">
+                                            <div class="home-product-item__img"
+                                                style="background-image:url(https://nhatminhdecor.com/wp-content/uploads/2019/01/chup-anh-voi-phong-nen-vai-trang-1.jpg) ;">
                                             </div>
-                                            <span class="home-product-item__sold">Đã bán 88</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Whoo</span>
-                                            <span class="home-product-item__origin-name">Nhật Bản</span>
-                                        </div>
-                                        <div class="home-product-item__favorite">
-                                            <i class="home-product-item__favorite-icon fa-solid fa-check"></i>
-                                            <span>Yêu thích</span>
-                                        </div>
+                                            <h4 class="home-product-item__name">Sét quần áo Sét quần áo Sét quần áo Sét
+                                                quần
+                                                áo Sét quần áo</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">1.200.000đ</div>
+                                                <div class="home-product-item__price-current">1.000.000đ</div>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-empty fa-regular fa-heart"></i>
+                                                    <i class="home-product-item__like-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star-yellow fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star-yellow fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star-yellow fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star-yellow fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đã bán 88</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Whoo</span>
+                                                <span class="home-product-item__origin-name">Nhật Bản</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="home-product-item__favorite-icon fa-solid fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
 
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__sale-off-percent">
-                                                43%
-                                            </span>
-                                            <span class="home-product-item__sale-off-label">
-                                                GIẢM
-                                            </span>
-                                        </div>
-                                    </a>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">
+                                                    43%
+                                                </span>
+                                                <span class="home-product-item__sale-off-label">
+                                                    GIẢM
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="col-2-4">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item__img"
-                                            style="background-image:url(https://nhatminhdecor.com/wp-content/uploads/2019/01/chup-anh-voi-phong-nen-vai-trang-1.jpg) ;">
-                                        </div>
-                                        <h4 class="home-product-item__name">Sét quần áo Sét quần áo Sét quần áo Sét quần
-                                            áo Sét quần áo</h4>
-                                        <div class="home-product-item__price">
-                                            <div class="home-product-item__price-old">1.200.000đ</div>
-                                            <div class="home-product-item__price-current">1.000.000đ</div>
-                                        </div>
-                                        <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
-                                                <i class="home-product-item__like-empty fa-regular fa-heart"></i>
-                                                <i class="home-product-item__like-fill fa-solid fa-heart"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
+                                <div class="children-col l-2-4 m-4 c-6">
+                                    <div class="row">
+                                        <a href="#" class="home-product-item">
+                                            <div class="home-product-item__img"
+                                                style="background-image:url(https://nhatminhdecor.com/wp-content/uploads/2019/01/chup-anh-voi-phong-nen-vai-trang-1.jpg) ;">
                                             </div>
-                                            <span class="home-product-item__sold">Đã bán 88</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Whoo</span>
-                                            <span class="home-product-item__origin-name">Nhật Bản</span>
-                                        </div>
-                                        <div class="home-product-item__favorite">
-                                            <i class="home-product-item__favorite-icon fa-solid fa-check"></i>
-                                            <span>Yêu thích</span>
-                                        </div>
+                                            <h4 class="home-product-item__name">Sét quần áo Sét quần áo Sét quần áo Sét
+                                                quần
+                                                áo Sét quần áo</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">1.200.000đ</div>
+                                                <div class="home-product-item__price-current">1.000.000đ</div>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-empty fa-regular fa-heart"></i>
+                                                    <i class="home-product-item__like-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star-yellow fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star-yellow fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star-yellow fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star-yellow fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đã bán 88</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Whoo</span>
+                                                <span class="home-product-item__origin-name">Nhật Bản</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="home-product-item__favorite-icon fa-solid fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
 
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__sale-off-percent">
-                                                43%
-                                            </span>
-                                            <span class="home-product-item__sale-off-label">
-                                                GIẢM
-                                            </span>
-                                        </div>
-                                    </a>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">
+                                                    43%
+                                                </span>
+                                                <span class="home-product-item__sale-off-label">
+                                                    GIẢM
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="col-2-4">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item__img"
-                                            style="background-image:url(https://nhatminhdecor.com/wp-content/uploads/2019/01/chup-anh-voi-phong-nen-vai-trang-1.jpg) ;">
-                                        </div>
-                                        <h4 class="home-product-item__name">Sét quần áo Sét quần áo Sét quần áo Sét quần
-                                            áo Sét quần áo</h4>
-                                        <div class="home-product-item__price">
-                                            <div class="home-product-item__price-old">1.200.000đ</div>
-                                            <div class="home-product-item__price-current">1.000.000đ</div>
-                                        </div>
-                                        <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
-                                                <i class="home-product-item__like-empty fa-regular fa-heart"></i>
-                                                <i class="home-product-item__like-fill fa-solid fa-heart"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
+                                <div class="children-col l-2-4 m-4 c-6">
+                                    <div class="row">
+                                        <a href="#" class="home-product-item">
+                                            <div class="home-product-item__img"
+                                                style="background-image:url(https://nhatminhdecor.com/wp-content/uploads/2019/01/chup-anh-voi-phong-nen-vai-trang-1.jpg) ;">
                                             </div>
-                                            <span class="home-product-item__sold">Đã bán 88</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Whoo</span>
-                                            <span class="home-product-item__origin-name">Nhật Bản</span>
-                                        </div>
-                                        <div class="home-product-item__favorite">
-                                            <i class="home-product-item__favorite-icon fa-solid fa-check"></i>
-                                            <span>Yêu thích</span>
-                                        </div>
+                                            <h4 class="home-product-item__name">Sét quần áo Sét quần áo Sét quần áo Sét
+                                                quần
+                                                áo Sét quần áo</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">1.200.000đ</div>
+                                                <div class="home-product-item__price-current">1.000.000đ</div>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-empty fa-regular fa-heart"></i>
+                                                    <i class="home-product-item__like-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star-yellow fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star-yellow fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star-yellow fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star-yellow fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đã bán 88</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Whoo</span>
+                                                <span class="home-product-item__origin-name">Nhật Bản</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="home-product-item__favorite-icon fa-solid fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
 
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__sale-off-percent">
-                                                43%
-                                            </span>
-                                            <span class="home-product-item__sale-off-label">
-                                                GIẢM
-                                            </span>
-                                        </div>
-                                    </a>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">
+                                                    43%
+                                                </span>
+                                                <span class="home-product-item__sale-off-label">
+                                                    GIẢM
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="col-2-4">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item__img"
-                                            style="background-image:url(https://nhatminhdecor.com/wp-content/uploads/2019/01/chup-anh-voi-phong-nen-vai-trang-1.jpg) ;">
-                                        </div>
-                                        <h4 class="home-product-item__name">Sét quần áo Sét quần áo Sét quần áo Sét quần
-                                            áo Sét quần áo</h4>
-                                        <div class="home-product-item__price">
-                                            <div class="home-product-item__price-old">1.200.000đ</div>
-                                            <div class="home-product-item__price-current">1.000.000đ</div>
-                                        </div>
-                                        <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
-                                                <i class="home-product-item__like-empty fa-regular fa-heart"></i>
-                                                <i class="home-product-item__like-fill fa-solid fa-heart"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
+                                <div class="children-col l-2-4 m-4 c-6">
+                                    <div class="row">
+                                        <a href="#" class="home-product-item">
+                                            <div class="home-product-item__img"
+                                                style="background-image:url(https://nhatminhdecor.com/wp-content/uploads/2019/01/chup-anh-voi-phong-nen-vai-trang-1.jpg) ;">
                                             </div>
-                                            <span class="home-product-item__sold">Đã bán 88</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Whoo</span>
-                                            <span class="home-product-item__origin-name">Nhật Bản</span>
-                                        </div>
-                                        <div class="home-product-item__favorite">
-                                            <i class="home-product-item__favorite-icon fa-solid fa-check"></i>
-                                            <span>Yêu thích</span>
-                                        </div>
-
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__sale-off-percent">
-                                                43%
-                                            </span>
-                                            <span class="home-product-item__sale-off-label">
-                                                GIẢM
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-2-4">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item__img"
-                                            style="background-image:url(https://nhatminhdecor.com/wp-content/uploads/2019/01/chup-anh-voi-phong-nen-vai-trang-1.jpg) ;">
-                                        </div>
-                                        <h4 class="home-product-item__name">Sét quần áo Sét quần áo Sét quần áo Sét quần
-                                            áo Sét quần áo</h4>
-                                        <div class="home-product-item__price">
-                                            <div class="home-product-item__price-old">1.200.000đ</div>
-                                            <div class="home-product-item__price-current">1.000.000đ</div>
-                                        </div>
-                                        <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
-                                                <i class="home-product-item__like-empty fa-regular fa-heart"></i>
-                                                <i class="home-product-item__like-fill fa-solid fa-heart"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
+                                            <h4 class="home-product-item__name">Sét quần áo Sét quần áo Sét quần áo Sét
+                                                quần
+                                                áo Sét quần áo</h4>
+                                            <div class="home-product-item__price">
+                                                <div class="home-product-item__price-old">1.200.000đ</div>
+                                                <div class="home-product-item__price-current">1.000.000đ</div>
                                             </div>
-                                            <span class="home-product-item__sold">Đã bán 88</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Whoo</span>
-                                            <span class="home-product-item__origin-name">Nhật Bản</span>
-                                        </div>
-                                        <div class="home-product-item__favorite">
-                                            <i class="home-product-item__favorite-icon fa-solid fa-check"></i>
-                                            <span>Yêu thích</span>
-                                        </div>
-
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__sale-off-percent">
-                                                43%
-                                            </span>
-                                            <span class="home-product-item__sale-off-label">
-                                                GIẢM
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-2-4">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item__img"
-                                            style="background-image:url(https://nhatminhdecor.com/wp-content/uploads/2019/01/chup-anh-voi-phong-nen-vai-trang-1.jpg) ;">
-                                        </div>
-                                        <h4 class="home-product-item__name">Sét quần áo Sét quần áo Sét quần áo Sét quần
-                                            áo Sét quần áo</h4>
-                                        <div class="home-product-item__price">
-                                            <div class="home-product-item__price-old">1.200.000đ</div>
-                                            <div class="home-product-item__price-current">1.000.000đ</div>
-                                        </div>
-                                        <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
-                                                <i class="home-product-item__like-empty fa-regular fa-heart"></i>
-                                                <i class="home-product-item__like-fill fa-solid fa-heart"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-empty fa-regular fa-heart"></i>
+                                                    <i class="home-product-item__like-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star-yellow fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star-yellow fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star-yellow fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star-yellow fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đã bán 88</span>
                                             </div>
-                                            <span class="home-product-item__sold">Đã bán 88</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Whoo</span>
-                                            <span class="home-product-item__origin-name">Nhật Bản</span>
-                                        </div>
-                                        <div class="home-product-item__favorite">
-                                            <i class="home-product-item__favorite-icon fa-solid fa-check"></i>
-                                            <span>Yêu thích</span>
-                                        </div>
-
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__sale-off-percent">
-                                                43%
-                                            </span>
-                                            <span class="home-product-item__sale-off-label">
-                                                GIẢM
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-2-4">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item__img"
-                                            style="background-image:url(https://nhatminhdecor.com/wp-content/uploads/2019/01/chup-anh-voi-phong-nen-vai-trang-1.jpg) ;">
-                                        </div>
-                                        <h4 class="home-product-item__name">Sét quần áo Sét quần áo Sét quần áo Sét quần
-                                            áo Sét quần áo</h4>
-                                        <div class="home-product-item__price">
-                                            <div class="home-product-item__price-old">1.200.000đ</div>
-                                            <div class="home-product-item__price-current">1.000.000đ</div>
-                                        </div>
-                                        <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
-                                                <i class="home-product-item__like-empty fa-regular fa-heart"></i>
-                                                <i class="home-product-item__like-fill fa-solid fa-heart"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Whoo</span>
+                                                <span class="home-product-item__origin-name">Nhật Bản</span>
                                             </div>
-                                            <span class="home-product-item__sold">Đã bán 88</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Whoo</span>
-                                            <span class="home-product-item__origin-name">Nhật Bản</span>
-                                        </div>
-                                        <div class="home-product-item__favorite">
-                                            <i class="home-product-item__favorite-icon fa-solid fa-check"></i>
-                                            <span>Yêu thích</span>
-                                        </div>
-
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__sale-off-percent">
-                                                43%
-                                            </span>
-                                            <span class="home-product-item__sale-off-label">
-                                                GIẢM
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-2-4">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item__img"
-                                            style="background-image:url(https://nhatminhdecor.com/wp-content/uploads/2019/01/chup-anh-voi-phong-nen-vai-trang-1.jpg) ;">
-                                        </div>
-                                        <h4 class="home-product-item__name">Sét quần áo Sét quần áo Sét quần áo Sét quần
-                                            áo Sét quần áo</h4>
-                                        <div class="home-product-item__price">
-                                            <div class="home-product-item__price-old">1.200.000đ</div>
-                                            <div class="home-product-item__price-current">1.000.000đ</div>
-                                        </div>
-                                        <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
-                                                <i class="home-product-item__like-empty fa-regular fa-heart"></i>
-                                                <i class="home-product-item__like-fill fa-solid fa-heart"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
+                                            <div class="home-product-item__favorite">
+                                                <i class="home-product-item__favorite-icon fa-solid fa-check"></i>
+                                                <span>Yêu thích</span>
                                             </div>
-                                            <span class="home-product-item__sold">Đã bán 88</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Whoo</span>
-                                            <span class="home-product-item__origin-name">Nhật Bản</span>
-                                        </div>
-                                        <div class="home-product-item__favorite">
-                                            <i class="home-product-item__favorite-icon fa-solid fa-check"></i>
-                                            <span>Yêu thích</span>
-                                        </div>
 
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__sale-off-percent">
-                                                43%
-                                            </span>
-                                            <span class="home-product-item__sale-off-label">
-                                                GIẢM
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-2-4">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item__img"
-                                            style="background-image:url(https://nhatminhdecor.com/wp-content/uploads/2019/01/chup-anh-voi-phong-nen-vai-trang-1.jpg) ;">
-                                        </div>
-                                        <h4 class="home-product-item__name">Sét quần áo Sét quần áo Sét quần áo Sét quần
-                                            áo Sét quần áo</h4>
-                                        <div class="home-product-item__price">
-                                            <div class="home-product-item__price-old">1.200.000đ</div>
-                                            <div class="home-product-item__price-current">1.000.000đ</div>
-                                        </div>
-                                        <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
-                                                <i class="home-product-item__like-empty fa-regular fa-heart"></i>
-                                                <i class="home-product-item__like-fill fa-solid fa-heart"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="home-product-item__star-yellow fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">
+                                                    43%
+                                                </span>
+                                                <span class="home-product-item__sale-off-label">
+                                                    GIẢM
+                                                </span>
                                             </div>
-                                            <span class="home-product-item__sold">Đã bán 88</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Whoo</span>
-                                            <span class="home-product-item__origin-name">Nhật Bản</span>
-                                        </div>
-                                        <div class="home-product-item__favorite">
-                                            <i class="home-product-item__favorite-icon fa-solid fa-check"></i>
-                                            <span>Yêu thích</span>
-                                        </div>
-
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__sale-off-percent">
-                                                43%
-                                            </span>
-                                            <span class="home-product-item__sale-off-label">
-                                                GIẢM
-                                            </span>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
                                 </div>
 
                             </div>
@@ -838,37 +652,39 @@
         </div>
         <footer class="footer">
             <div class="gird">
-                <div class="gird__row">
-                    <div class="col-2-4">
-                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
-                        <ul class="footer__list">
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
-                            </li>
-                        </ul>
+                <div class="row">
+                    <div class="col l-2-4 m-2-4 c-2-4">
+                        <div class="row">
+                            <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                            <ul class="footer__list">
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-2-4">
+                    <div class="col l-2-4 m-2-4 c-2-4">
                         <h3 class="footer__heading">Về Shopee</h3>
                         <ul class="footer__list">
                             <li class="footer-item">
@@ -888,10 +704,10 @@
                             </li>
 
                     </div>
-                    <div class="col-2-4">
+                    <div class="col l-2-4 m-2-4 c-2-4">
                         <h3 class="footer__heading">Thanh toán</h3>
                     </div>
-                    <div class="col-2-4">
+                    <div class="col l-2-4 m-2-4 c-2-4">
                         <h3 class="footer__heading">Theo dõi</h3>
                         <ul class="footer__list">
                             <li class="footer-item">
@@ -909,7 +725,7 @@
                         </ul>
 
                     </div>
-                    <div class="col-2-4">
+                    <div class="col l-2-4 m-2-4 c-2-4">
                         <h3 class="footer__heading">Tải ứng dụng</h3>
                         <div class="footer__download">
                             <img src="./asserts/images/Qrcode.png" alt="" class="footer__download-qr">
